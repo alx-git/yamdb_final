@@ -1,9 +1,8 @@
 from django.contrib.auth import get_user_model
 from django.db import models
-
-from .validators import ValidateScore
 from yamdb.models import Title
 
+from .validators import ValidateScore
 
 User = get_user_model()
 

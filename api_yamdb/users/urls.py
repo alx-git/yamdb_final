@@ -1,12 +1,7 @@
-from django.urls import path, include
+from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
-from .views import (
-    UserViewSet,
-    sign_up,
-    sign_confirm,
-)
-
+from .views import UserViewSet, sign_confirm, sign_up
 
 router = DefaultRouter()
 router.register('users', UserViewSet)
