@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 from django.db import models
 from yamdb.models import Title
 
-from .validators import ValidateScore
+from .validators import validatescore
 
 User = get_user_model()
 
@@ -11,7 +11,7 @@ class Review(models.Model):
     text = models.TextField('Текст отзыва')
     score = models.PositiveSmallIntegerField(
         'Рейтинг',
-        validators=(ValidateScore,)
+        validators=(validatescore,)
     )
     pub_date = models.DateTimeField(
         'Дата ревью',
