@@ -7,7 +7,7 @@ services:
     volumes:
       - /var/lib/postgresql/data/
     env_file:
-      - .env
+      - ./.env
   
   web:
     image: alx070809/yamdb_final:latest
@@ -18,7 +18,7 @@ services:
     depends_on:
       - db
     env_file:
-      - .env
+      - ./.env
 
   nginx:
     image: nginx:1.21.3-alpine
