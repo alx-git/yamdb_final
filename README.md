@@ -74,6 +74,7 @@ alexander
 
 ### Ссылка на проект
 
+http://alexyatube.ddns.net/admin
+
 https://github.com/alx-git/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
 
----
