@@ -3,7 +3,7 @@ from datetime import timedelta
 
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(join(dirname(__file__), '.env'))
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
