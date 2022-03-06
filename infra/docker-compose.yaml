@@ -13,8 +13,8 @@ services:
     image: alx070809/yam:latest
     restart: always
     volumes:
-      - static_value:/api_yamdb/static/
-      - media_value:/api_yamdb/media/
+      - static_value:/static/
+      - media_value:/media/
     depends_on:
       - db
     env_file:
@@ -26,8 +26,8 @@ services:
       - "80:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - static_value:/api_yamdb/static/
-      - media_value:/api_yamdb/media/
+      - static_value:/static/
+      - media_value:/media/
     depends_on:
       - web
 
