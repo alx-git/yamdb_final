@@ -78,5 +78,5 @@ http://alexyatube.ddns.net/admin
 
 ![example workflow](https://github.com/alx-git/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
---
+---
 
