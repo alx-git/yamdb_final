@@ -3,13 +3,10 @@ from rest_framework import viewsets
 from rest_framework.exceptions import ValidationError
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-
 from users.permissions import IsAdminOrSuper, IsAuthor, IsModerator, ReadOnly
+
 from .models import Review, Title
-from .serializers import (
-    CommentSerializer,
-    ReviewSerializer,
-)
+from .serializers import CommentSerializer, ReviewSerializer
 
 
 class ReviewViewSet(viewsets.ModelViewSet):

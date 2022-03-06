@@ -1,17 +1,13 @@
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, mixins, viewsets
 from rest_framework.pagination import LimitOffsetPagination
-
 from users.permissions import IsAdminOrSuper, ReadOnly
+
 from .filters import TitleFilter
 from .models import Category, Genre, Title
 from .pagination import TitlesPagination
-from .serializers import (
-    CategorySerializer,
-    GenreSerializer,
-    TitleInputSerializer,
-    TitleOutputSerializer
-)
+from .serializers import (CategorySerializer, GenreSerializer,
+                          TitleInputSerializer, TitleOutputSerializer)
 
 
 class CategoryViewSet(mixins.CreateModelMixin,
