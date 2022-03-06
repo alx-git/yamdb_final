@@ -4,6 +4,7 @@ from yamdb.models import Title
 
 User = get_user_model()
 
+
 class Review(models.Model):
     text = models.TextField('Текст отзыва')
     score = models.PositiveSmallIntegerField(
