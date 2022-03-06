@@ -2,9 +2,7 @@ from django.contrib.auth import get_user_model
 from django.db import models
 from yamdb.models import Title
 
-
 User = get_user_model()
-
 
 class Review(models.Model):
     text = models.TextField('Текст отзыва')
