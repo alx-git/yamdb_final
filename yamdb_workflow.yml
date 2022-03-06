@@ -44,7 +44,7 @@ jobs:
         with:
           context: ./api_yamdb/
           push: true
-          tags: alx070809/yamdb   
+          tags: alx070809/yamdb:latest   
  
   deploy:
     runs-on: ubuntu-latest
